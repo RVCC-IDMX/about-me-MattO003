@@ -1,12 +1,15 @@
 body {
     font-family: Roboto;
     background-color: #F5B964;
-    color: #2B7DA8;
+    color: #1d5675;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family:"Grenze Gotisch";
-    font-size:50pt;
+    text-align: center;
+}
+h1{
+    font-size:40pt;
 }
 
 header {
@@ -27,5 +30,13 @@ header {
 
 #bio {
     text-align: center;
+}
+
+#hobbies ul li:nth-child(2n+1) {
+    color: magenta;
+}
+
+#hobbies ul li:nth-child(2n+2) {
+    color: blueviolet;
 }
 
