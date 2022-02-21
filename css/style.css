@@ -24,19 +24,39 @@ header {
     padding: 10px;
 }
 
+/* Hero Section */
+
 #hero img{
     width:300px;
 }
+
+/* Bio Section */
 
 #bio {
     text-align: center;
 }
 
+/* Hobbies Section */
+
 #hobbies ul li:nth-child(2n+1) {
-    color: magenta;
+    color: green;
 }
 
 #hobbies ul li:nth-child(2n+2) {
-    color: blueviolet;
+    color: blue;
+}
+
+/* Gallery */
+
+#gallery {
+    border: 3px solid #1d5675;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery figure {
+    text-align: center;
 }
 
