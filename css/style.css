@@ -118,6 +118,12 @@ iframe {
     color: #A86922;
 }
 
+/* Contact Form */
+
+#formElements {
+    display:grid;
+}
+
 
 /* Tablet Size */
 @media screen and (min-width: 60em)
