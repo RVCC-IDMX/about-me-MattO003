@@ -31,12 +31,16 @@ header {
 
 #hero img{
     width:300px;
+    border: 2px solid #4b2f0f;
+    border-radius: 15px 15px 15px;
 }
 
 /* Bio Section */
 
 #bio {
     text-align: center;
+    border: 2px solid #83F5FF;
+    border-radius: 0px 0px 50px 50px;
 }
 
 /* Hobbies Section */
@@ -49,10 +53,12 @@ header {
     color: blue;
 }
 
-#hobbies {
+#hobbies ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
+    
 }
 
 /* Gallery */
@@ -60,6 +66,7 @@ header {
 #gallery {
     border: 3px solid #1d5675;
     margin-bottom: 2rem;
+    border-radius: 50px 50px 0px 0px;
 }
 
 #gallery img {
@@ -90,18 +97,54 @@ header {
 /* Dropcaps */ 
 
 #lit div p:first-child::first-letter {
-
     color: darkblue;
     float: left;
-    font-size: 3em;
-    padding: .5em;
-    margin-right: .25em;
-    line-height: .65;
-    border:1px solid black;
-    background-image:radial-gradient(orange,rgb(86, 117, 128));
-    text-shadow: 5px 5px 5px;
-    border-radius: .2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
 }
+
+.container {
+    position: relative;
+    width: 70%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 75%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F5B964;
+}
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
 
 /* Video Embed */
 

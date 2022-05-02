@@ -12,10 +12,22 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 
 </head>
 <body>
     
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navbar-links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
     <!--the body element contains all content shown to a 
         visitor-->
 
@@ -23,18 +35,24 @@
         <!-- the header shows the logo and page title-->
         <nav class="navbar">
             <div class="logo">
-                <img src="img/BOB.svg" alt="Blue oragami logo">
+                <img src="img/MBO - Oribitron.svg" alt="My initials as a logo">
                 <h1>Web Dev I</h1>
             </div>
-            <div class="navbar-links">
+            <div id="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#lit">Blog</a></li>
                     <li><a href="#contact">Contact Me</a></li>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"><img src="img/Hamburger_icon.svg" alt=""></i>
+                    </a>
+                    </div>
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -43,7 +61,7 @@
             important page content -->
         
         <section id="hero">
-            <img src="img/avataaars.png" alt="Avatar picture of me">
+            <img src="img/pfp.jpg" alt="Avatar picture of me">
             <div>
                 <p>Matthew O'Dell</p>
                 <p>Somerset, NJ</p>
@@ -55,13 +73,23 @@
 
                 <h2>Biography:</h2>
 
-                <p>I want to be...</p>
-                <p>a cybersecurity professional!</p>
-                <p>My favorite way to work is...</p>
-                <p>in the morning, so I know I have ample time to complete my tasks</p>
-                <p>Also, once I'm done I have the rest of the day to relax.</p>
-                <p>I'n my free time, I like to...</p>
+                <p>Currently, I aspire to become a cybersecurity professional.</p>
+                <p>As of right now, I am taking quite a few classes that will hopefully help me to achieve that aspiration.
+                </p>
+                <p>This includes Web Development, Database Dev and Design, and Computer Science.</p>
+                <p>That also means that I'm currently learning THREE different programming languages.</p>
+                <p>1. HTML - In my Web Development class</p>
+                <p>2. SQL - In my Database Development and Design class</p>
+                <p>3. JAVA - In my Computer Science class</p>
+                <p>Thankfully, it hasn't been too bad.</p>
+                <p>Right now, my favorite way to work is...</p>
+                <p>in the morning, so I know I have ample time to complete my tasks.</p>
+                <p>However, this does mean that I actually have to wake up, which is probably the hardest part.</p>
+                <p>Although, once I'm done I have the rest of the day to relax.</p>
+                <p>In my free time, I like to...</p>
                 <p>Hang out with friends, use my PC, or watch TV.</p>
+                <p>Recently, I've been watching A LOT of Castle.</p>
+                <p>School and work combined don't give me much free time, so I'm excited for the summer.</p>
 
             </div>
 
@@ -72,11 +100,11 @@
         <h2>Hobbies:</h2>
 
         <ul>
-            <li>PC Games</li>
-            <li>Drone Flying</li>
-            <li>Airsoft</li>
-            <li>Biking</li>
-            <li>Bowling</li>
+            <li>PC Games - As of right now I haven't had much time. In the time I do have I've been playing ELDEN RING</li>
+            <li>Drone Flying - I recently received a professional drone as a Christmas gift</li>
+            <li>Airsoft - I have a lot of equipment, but unfortunately my nearby arena has closed from COVID</li>
+            <li>Biking - I enjoy biking both by myself and with friends.</li>
+            <li>Bowling - Recently, I haven't gone much, but I still love to go when I have the time.</li>
         </ul>
 
     </section>
@@ -129,33 +157,60 @@
 
     <article id="lit">
 
-        <h2>Good ol Sherlock Holmes</h2>
+        <h2>CSS Hover Effects</h2>
 
         <div>
 
-            <p>You have come to me to tell your story, have you not?" said he. "You are fatigued with your haste. Pray wait until you have recovered yourself, 
-            and then I shall be most happy to look into any little problem which you may submit to me."</p>
+            <p>My topic of choice is CSS Hover effects, and it's something that I've actually found very interesting while going into research. Basically, 
+                These effects allow for images to take on a new life. Hover effects add animation through changes of the image, whether it be through adding text, 
+                transperency, shadows, patterns, and much more!"</p>
 
-            <p>The man sat for a minute or more with a heaving chest, fighting against his emotion. Then he passed his handkerchief over his brow, set his lips tight, 
-            and turned his face towards us.</p>
+            <p>First off, lets start with text. There is many ways to add text onto an image. The first way we'll talk about is by adding in a fade in text 
+                animation. When hovering over the specified image, one can introduce a blanket layer over the image that reveals some text with it. Next, text can be added
+                in with a slide in layer, again bringing text with it. This can be done by sliding in the layer from the top, bottom, or sides. A text overlay can be good for 
+                describing images, as the text can go into detail on what the image is about, where it's located, or what it's showing.
+            </p>
 
-            <p>No doubt you think me mad?" said he.</p>
+            <p>Next, there is transperency.</p>
 
-            <p>I see that you have had some great trouble," responded Holmes.</p>
+            <p>Transperency in images allows for a neat effect when a cursor is hovering on top. The transperency of an image might drop or even possibly 
+                increase depending on the default state of the image. This could be useful for fading images in web pages.</p>
 
-            <p>God knows I have!--a trouble which is enough to unseat my reason, so sudden and so terrible is it. Public disgrace I might have faced, although I am a man 
-            whose character has never yet borne a stain. Private affliction also is the lot of every man; but the two coming together, and in so frightful a form, 
-            have been enough to shake my very soul. Besides, it is not I alone. The very noblest in the land may suffer unless some way 
-            be found out of this horrible affair."</p>
+            <p>Another pretty cool effect is shadows. Shadow effects with images can create a sense of depth in the web page. When hovering over an image, 
+                the effect of a shadow can make it so that the image is pertruding from the page, making it so that there are shadows underneath where it stands.</p>
 
-            <p>Pray compose yourself, sir," said Holmes, "and let me have a clear account of who you are and what it is that has befallen you."</p>
+            <p>The last effect I'll talk about is patterns, which can be placed behind an image to give a smooth animation once a cursor it placed over it. By providing patterns behind the image,
+                the patterns can then reveal themselves more fully once the animation begins.
+            </p>
 
-            <p>My name," answered our visitor, "is probably familiar to your ears. I am Alexander Holder, of the banking firm of Holder & Stevenson, 
-            of Threadneedle Street."</p>
+            <p>Hover effects are easy to implement and only require HTML and CSS to work. I believe that the text implementation is probably the most useful way 
+                to use hover effects, considering more information can be given to a viewer.
+            </p>
 
-            <p>The name was indeed well known to us as belonging to the senior partner in the second largest private banking concern in the City of London. 
-            What could have happened, then, to bring one of the foremost citizens of London to this most pitiable pass? We waited, all curiosity, until with another 
-            effort he braced himself to tell his story.</p>
+            <p>To use these effects, a container class must be created with a width and position. Then, create an overlay class with 
+                a transition and make sure to set the opacity to zero. This way, the overlay won't show up unless the opacity is raised.
+                Next, the overlay must be visualized by using </p>
+
+            <p>.container:hover .overlay { opacity: 1; }</p>
+
+            <p>This way, the overlay will now show up when a cursor is placed over the image.</p>
+
+            <p>I was able to create this small article with the help of these websites.</p>
+
+            <p><a href="http://www.corelangs.com/css/box/hover.html" style="font-weight:bold">Core Langs</a></p>
+            <p><a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp" style="font-weight:bold">W3 Schools</a></p>
+            <p><a href="https://freefrontend.com/css-hover-effects/" style="font-weight:bold">Free Frontend</a></p>
+
+            <p>Lastly, here is an example of an image with a text overlay</p>
+
+            <div class="container">
+                <img src="img/landscape-640w.JPG" alt="A landscape picture in Switzerland." class="image">
+                <div class="overlay">
+                  <div class="text">Switzerland</div>
+                </div>
+              </div>
+
+            
 
         </div>
 
